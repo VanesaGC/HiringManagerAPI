@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "71ce3994-a700-402d-99de-1db6454755b9",
+		"name": "HiringManagerAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2412436"
+	},
+	"item": [
+		{
+			"name": "Add Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"Jane\",\r\n  \"lastName\": \"Doe\",\r\n  \"email\": \"janedoe@gmail.com\",\r\n  \"phone\": \"123456789\",\r\n  \"address\": \"Calle Lorem ipsum\",\r\n  \"dateOfBirth\": \"2091-09-14T01:16:59.732Z\",\r\n  \"dateOfInterview\": \"2022-12-17T01:16:59.732Z\",\r\n  \"offerJob\": true,\r\n  \"remarks\": \"Lorem ipsum dolor sit amet consectetur.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7161/api/Person",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7161",
+					"path": [
+						"api",
+						"Person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Person by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7161/api/Person/0",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7161",
+					"path": [
+						"api",
+						"Person",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Person",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"John\",\r\n  \"lastName\": \"Doe\",\r\n  \"email\": \"johndoe@gmail.com\",\r\n  \"phone\": \"123456789\",\r\n  \"address\": \"Calle Lorem ipsum\",\r\n  \"dateOfBirth\": \"2091-09-14T01:16:59.732Z\",\r\n  \"dateOfInterview\": \"2022-12-17T01:16:59.732Z\",\r\n  \"offerJob\": false,\r\n  \"remarks\": \"Lorem ipsum dolor sit amet consectetur.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7161/api/Person/0",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7161",
+					"path": [
+						"api",
+						"Person",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7161/api/Person",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7161",
+					"path": [
+						"api",
+						"Person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Person by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7161/api/Person/0",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7161",
+					"path": [
+						"api",
+						"Person",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
